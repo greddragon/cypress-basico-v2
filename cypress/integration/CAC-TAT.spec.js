@@ -151,7 +151,7 @@ describe("Central de Atendimento ao Cliente TAT", () => {
     cy.get('#privacy').find('a').invoke('removeAttr', 'target').click();
   });
 
-  it.only('testa a página da política de privacidade de forma independente', () => {
+  it('testa a página da política de privacidade de forma independente', () => {
     cy.visit('./src/privacy.html');
   })
 });
